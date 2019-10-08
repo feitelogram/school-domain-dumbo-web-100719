@@ -13,9 +13,9 @@ end
 
 def add_student(student, grade)
   if ROSTER.keys.include?(grade)
-    binding.pry 
+    ROSTER[grade] << student
+  else ROSTER[grade] = []
+    ROSTER[grade] << student
   end
-  ROSTER[grade] = []
-  ROSTER[grade] << student
 end
 end 
