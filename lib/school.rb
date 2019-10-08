@@ -26,7 +26,8 @@ end
 
 def sort
   @roster.map do |grade, students|
-    binding.pry
+    students = students.sort
   end
+  @roster
 end 
 end 
