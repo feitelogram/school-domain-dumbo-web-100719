@@ -12,6 +12,9 @@ def roster
 end
 
 def add_student(student, grade)
+  if ROSTER[grade]
+    binding.pry 
+  end
   ROSTER[grade] = []
   ROSTER[grade] << student
 end
