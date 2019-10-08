@@ -11,11 +11,11 @@ def roster
   ROSTER
 end
 
-def add_student(name, grade)
-    if ROSTER[grade] != nil
-      ROSTER[grade] << name
-    else
-      ROSTER[grade] = [name]
-    end
+def add_student(student, grade)
+  if ROSTER.keys.include?(grade)
+    ROSTER[grade] << student
+  else
+    ROSTER[grade] = [student]
   end
+end
 end 
