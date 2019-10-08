@@ -25,7 +25,7 @@ def grade(grade)
 end
 
 def sort
-  @roster.each do |class|
+  @roster.each do |group|
     binding.pry
   end
 end 
