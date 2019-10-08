@@ -12,7 +12,7 @@ def roster
 end
 
 def add_student(student, grade)
-  if ROSTER[grade]
+  if ROSTER.keys.include?(grade)
     binding.pry 
   end
   ROSTER[grade] = []
