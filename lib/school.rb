@@ -15,7 +15,7 @@ def add_student(student, grade)
   if ROSTER.keys.include?(grade)
     ROSTER[grade] << student
   else ROSTER[grade] = []
-    ROSTER[grade] << student
+    ROSTER[grade] = student
   end
 end
 end 
