@@ -4,18 +4,19 @@ require "pry"
 class School
   def initialize(name)
     @name = name
+    @roster = {}
   end
-ROSTER = {}
+
 
 def roster
-  ROSTER
+  @roster
 end
 
 def add_student(student, grade)
-  if ROSTER.keys.include?(grade)
-    ROSTER[grade] << student
+  if @roster.keys.include?(grade)
+    @roster[grade] << student
   else
-    ROSTER[grade] = [student]
+    @roster[grade] = [student]
   end
 end
 end 
